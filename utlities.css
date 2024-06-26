@@ -1,0 +1,55 @@
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.item-center {
+  align-items: center;
+}
+
+.border {
+  border: 1px solid red;
+  margin: 3px;
+}
+.bg-black {
+  background-color: black;
+  color: white;
+}
+
+.bg-gray {
+  background-color: #121212;
+}
+.rounded {
+  border-radius: 7px;
+}
+.m-1 {
+  margin: 6px;
+}
+.p-1 {
+  padding: 10px;
+}
+
+/* Width and Height of the scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* You can adjust this value to change the width */
+  height: 12px; /* You can adjust this value to change the height */
+}
+
+/* Track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+  background: #333; /* Dark grey background color */
+}
+
+/* Handle (thumb) of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #666; /* Darker grey color */
+  border-radius: 6px; /* Rounder edges */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Lighter grey color */
+}
