@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify - Web Player: Music for everyone</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="utlities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utlities.css" />
   </head>
   <body>
     <div class="container flex">
@@ -113,7 +113,7 @@
         <div class="spotifyPlaylist">
           <h1>Spotify Playlist</h1>
           <div class="cardContainer">
-            <div class="card">
+            <div data-folder="sad" class="card">
               <div class="play">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -134,16 +134,11 @@
                   <polygon points="10,8 16,12 10,16" fill="currentColor" />
                 </svg>
               </div>
-              <img
-                src="https://i.scdn.co/image/ab67616d00001e02024a3f22192b30c2c5d9c13b"
-                alt="playlist"
-              />
-              <h2 class="happy-heading">Happy Hits!</h2>
-              <p class="happy-description">
-                Hits to boost your mood and fill you with happiness!
-              </p>
+              <img src="img/cover0.jpg" alt="playlist" />
+              <h2 class="happy-heading">All Hits songs!</h2>
+              <p class="happy-description">Songs for you!</p>
             </div>
-            <div class="card">
+            <div data-folder="love" class="card">
               <div class="play">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -164,14 +159,109 @@
                   <polygon points="10,8 16,12 10,16" fill="currentColor" />
                 </svg>
               </div>
-              <img
-                src="https://i.scdn.co/image/ab67616d00001e02024a3f22192b30c2c5d9c13b"
-                alt="playlist"
-              />
-              <h2 class="happy-heading">Happy Hits!</h2>
-              <p class="happy-description">
-                Hits to boost your mood and fill you with happiness!
-              </p>
+              <img src="img/cover01.jpg" alt="playlist" />
+              <h2 class="happy-heading">Recent Songs!</h2>
+              <p class="happy-description">Songs for you!</p>
+            </div>
+            <div data-folder="thai" class="card">
+              <div class="play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  color="#000000"
+                  fill="black"
+                >
+                  <!-- Original path -->
+                  <path
+                    d="M16.8906 12.846C16.5371 14.189 14.8667 15.138 11.5257 17.0361C8.296 18.8709 6.6812 19.7884 5.37983 19.4196C4.8418 19.2671 4.35159 18.9776 3.95624 18.5787C3 17.6139 3 15.7426 3 12C3 8.2574 3 6.3861 3.95624 5.42132C4.35159 5.02245 4.8418 4.73288 5.37983 4.58042C6.6812 4.21165 8.296 5.12907 11.5257 6.96393C14.8667 8.86197 16.5371 9.811 16.8906 11.154C17.0365 11.7084 17.0365 12.2916 16.8906 12.846Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                  <!-- Play button -->
+                  <polygon points="10,8 16,12 10,16" fill="currentColor" />
+                </svg>
+              </div>
+              <img src="img/cover02.jpg" alt="playlist" />
+              <h2 class="happy-heading">Thai Songs!</h2>
+              <p class="happy-description">Songs for you!</p>
+            </div>
+            <div data-folder="nepali" class="card">
+              <div class="play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  color="#000000"
+                  fill="black"
+                >
+                  <!-- Original path -->
+                  <path
+                    d="M16.8906 12.846C16.5371 14.189 14.8667 15.138 11.5257 17.0361C8.296 18.8709 6.6812 19.7884 5.37983 19.4196C4.8418 19.2671 4.35159 18.9776 3.95624 18.5787C3 17.6139 3 15.7426 3 12C3 8.2574 3 6.3861 3.95624 5.42132C4.35159 5.02245 4.8418 4.73288 5.37983 4.58042C6.6812 4.21165 8.296 5.12907 11.5257 6.96393C14.8667 8.86197 16.5371 9.811 16.8906 11.154C17.0365 11.7084 17.0365 12.2916 16.8906 12.846Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                  <!-- Play button -->
+                  <polygon points="10,8 16,12 10,16" fill="currentColor" />
+                </svg>
+              </div>
+              <img src="img/cover03.jpg" alt="playlist" />
+              <h2 class="happy-heading">Nepali Songs!</h2>
+              <p class="happy-description">Songs for you!</p>
+            </div>
+            <div data-folder="eng" class="card">
+              <div class="play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  color="#000000"
+                  fill="black"
+                >
+                  <!-- Original path -->
+                  <path
+                    d="M16.8906 12.846C16.5371 14.189 14.8667 15.138 11.5257 17.0361C8.296 18.8709 6.6812 19.7884 5.37983 19.4196C4.8418 19.2671 4.35159 18.9776 3.95624 18.5787C3 17.6139 3 15.7426 3 12C3 8.2574 3 6.3861 3.95624 5.42132C4.35159 5.02245 4.8418 4.73288 5.37983 4.58042C6.6812 4.21165 8.296 5.12907 11.5257 6.96393C14.8667 8.86197 16.5371 9.811 16.8906 11.154C17.0365 11.7084 17.0365 12.2916 16.8906 12.846Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                  <!-- Play button -->
+                  <polygon points="10,8 16,12 10,16" fill="currentColor" />
+                </svg>
+              </div>
+              <img src="img/cover04.jpg" alt="playlist" />
+              <h2 class="happy-heading">English Songs!</h2>
+              <p class="happy-description">Songs for you!</p>
+            </div>
+            <div data-folder="popular" class="card">
+              <div class="play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  color="#000000"
+                  fill="black"
+                >
+                  <!-- Original path -->
+                  <path
+                    d="M16.8906 12.846C16.5371 14.189 14.8667 15.138 11.5257 17.0361C8.296 18.8709 6.6812 19.7884 5.37983 19.4196C4.8418 19.2671 4.35159 18.9776 3.95624 18.5787C3 17.6139 3 15.7426 3 12C3 8.2574 3 6.3861 3.95624 5.42132C4.35159 5.02245 4.8418 4.73288 5.37983 4.58042C6.6812 4.21165 8.296 5.12907 11.5257 6.96393C14.8667 8.86197 16.5371 9.811 16.8906 11.154C17.0365 11.7084 17.0365 12.2916 16.8906 12.846Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                  <!-- Play button -->
+                  <polygon points="10,8 16,12 10,16" fill="currentColor" />
+                </svg>
+              </div>
+              <img src="img/cover05.jpg" alt="playlist" />
+              <h2 class="happy-heading">Pouplar Songs!</h2>
+              <p class="happy-description">Songs for you!</p>
             </div>
           </div>
 
@@ -197,13 +287,27 @@
                   alt="nextsong"
                 />
               </div>
-              <div class="songtime"></div>
+              <div class="songTimeVolume">
+                <div class="songtime"></div>
+                <div class="volume">
+                  <img
+                    id="volume"
+                    width="35"
+                    src="img/volume.svg"
+                    alt="volume"
+                  />
+
+                  <div class="range">
+                    <input type="range" name="volume" id="" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
